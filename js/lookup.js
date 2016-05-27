@@ -1,11 +1,12 @@
 var apiKey = require('./../.env').apiKey;
+var ghLink = 'https://api.github.com/users/';
 
-exports.Lookup = function(username){
-  this.username = username;
+exports.Lookup = function(){
+  this.username = undefined;
 };
 
-exports.Lookup.prototype.getRepos = function(){
-  $.get('https://api.github.com/users/inthra/repos?access_token=' + apiKey).then(function(response){
+exports.Lookup.prototype.getRepos = function(username){
+  $.get(ghLink + username + '/repos?access_token=' + apiKey).then(function(response){
     console.log(response[0].name);
     console.log(response[0].description);
     $('#gh_repoName').text(response[0].name);
