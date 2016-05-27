@@ -1,6 +1,6 @@
-# _Independent Project: Modern JS - GitHub User Lookup _
+# Independent Project: Modern JS - GitHub User Lookup
 
-#### _A website where names and descriptions of a person's public repository can be displayed. , May 27, 2016_
+#### A website where names and descriptions of a person's public repository can be displayed. , May 27, 2016
 
 #### By _Inthrayuth Mahaphol_
 
@@ -19,11 +19,13 @@ A website where the user can enter a GitHub username into a form. The website wi
 
 ## Setup API Requirements
 
-* You may need to get your own the GitHub API key. Without the key, you can retrieve GitHub information only 60 requests per hour. However, you can access 5,000 requests per hour if you have the key. GitHub refers to these keys as "Personal Access Tokens". You can get the key by generating it via your GitHub account.
+* You need to get your own the GitHub API key. Without the key, you can retrieve GitHub information only 60 requests per hour. However, you can access 5,000 requests per hour if you have the key. GitHub refers to these keys as "Personal Access Tokens". You can get the key by generating it via your GitHub account.
 
-* Anyone who uses the app will need their own key in a local file with the same filename and location.
+* You will need to store the key in a local file with the same filename and location.
 
-* Create a file in the top level of your project directory called .env (hidden file) to hold our API key. This is a common file extension for a configuration file used to set up environmental variables. Paste your API key in your .env file that you just created and store it in an exported property named apiKey.
+* You must name your API key variable _exports.apiKey_ in your .env file (hidden file) and store it in the root of the project directory.
+
+* Create a file in the top level of your project directory called .env file to hold our API key. This is a common file extension for a configuration file used to set up environmental variables. Paste your API key in your .env file that you just created and store it in an exported property named apiKey.
 
 * _API key .env (hidden file) file example:_
 **exports.apiKey = "YOUR-API-KEY-GOES-HERE";**
@@ -41,14 +43,14 @@ Feel free to contact me with questions or suggestions and contribute to the code
 
 ## Technologies Used
 
-* _Git_
-* _Github_
-* _Atom text editor_
-* _JavaScript_
-* _Node.js - including npm and bower_
+* Git
+* Github
+* Atom text editor
+* JavaScript
+* Node.js - including npm and bower
 
 ### License
 
-*This software is licensed under the MIT license*
+_This software is licensed under the MIT license_
 
 Copyright (c) 2016 Inthrayuth M.
