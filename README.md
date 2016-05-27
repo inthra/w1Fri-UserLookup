@@ -14,7 +14,7 @@ A website where the user can enter a GitHub username into a form. The website wi
 * Clone or download this repository to your Github account
 * Create a project directory on your computer
 * Have Node.js installed on your computer
-* In your terminal run npm install, then bower_install, then gulp build, and then gulp_serve
+* In your terminal run **npm install, bower install, gulp build, and gulp serve**
 * A local web server should automatically open in your browser with the website loaded if you have a browser open
 
 ## Setup API Requirements
