@@ -1,24 +1,33 @@
-$green: #32d019;
 $brightblue: #33ccff;
+$gray: gray;
+$space: 10px;
 
 body {
-  text-align: center;
   // background-image: url("../../scss/img01.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  .container {
-    h1 {
-      font-family: serif;
-      font-weight: bold;
-      color: $brightblue;
-    }
-    button {
-      background-color: $green;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    #printInput {
-      font-size: 32px;
-    }
-  }
+}
+
+.header {
+  background: $gray;
+}
+
+h1 {
+  text-align: center;
+  color: $brightblue;
+  padding-top: $space;
+  padding-bottom: $space;
+}
+
+#userInput {
+  width: 300px;
+}
+
+button {
+  margin-top: $space;
+  border-radius: 5px;
+  width: auto;
+  background-color: $brightblue;
+  font-weight: bold;
+  font-size: 16px;
 }
