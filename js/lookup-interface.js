@@ -4,14 +4,15 @@ $(document).ready(function(){
   $('#input').submit(function(event){
     event.preventDefault();
 
-    var userInput = $('#userInput').val();
+    var userNameInput = $('#userInput').val();
     $('#userInput').val("");
 
-    var newLookup = new Lookup(userInput);
+    var newLookup = new Lookup(userNameInput);
 
     newLookup.getRepos();
     $('#output').show();
-    $('#gh_username').text(userInput);
+    $('#gh_username').text(userNameInput);
+
 
   });
 });
