@@ -6,7 +6,7 @@
 
 ## Description
 
-A website where the user can enter a GitHub username into a form. The website will display names and descriptions of that username's public repositories.
+A website where the user can enter a GitHub username into a form. The website will display names and descriptions of that username's public repositories. The app incorporates API to retrieve GitHub information.
 
 ## Setup/Installation Requirements
 
