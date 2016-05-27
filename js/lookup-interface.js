@@ -10,11 +10,18 @@ $(document).ready(function(){
     var userNameInput = $('#userInput').val();
     $('#userInput').val("");
 
-    newLookup.getRepos(userNameInput);
-    
+    var displayFunction = function(response) {
+      $('#gh_repoNameDes').empty();
+      var maxLength = response.length;
+      for (var i = 0; i < maxLength; i++) {
+        $('#gh_repoNameDes').append("<li>Repository name:<span class='boldText'> " + response[i].name + '</span><br>' + 'Description:  '+ response[i].description + '</li>');
+      }
+    };
+
+    newLookup.getRepos(userNameInput, displayFunction);
+
     $('#output').show();
     $('#gh_username').text(userNameInput);
-
 
   });
 });

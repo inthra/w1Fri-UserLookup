@@ -1,9 +1,11 @@
-$brightblue: #33ccff;
-$gray: gray;
+$blue: #0066ff;
+$lightblue: #e6faff;
+$gray: #C0C0C0;
+$green: #33cc33;
 $space: 10px;
 
 body {
-  // background-image: url("../../scss/img01.jpg");
+  background-color: $lightblue;
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -14,7 +16,7 @@ body {
 
 h1 {
   text-align: center;
-  color: $brightblue;
+  color: $blue;
   padding-top: $space;
   padding-bottom: $space;
 }
@@ -27,7 +29,7 @@ button {
   margin-top: $space;
   border-radius: 5px;
   width: auto;
-  background-color: $brightblue;
+  background: $gray;
   font-weight: bold;
   font-size: 14px;
 }
