@@ -18,7 +18,8 @@ $(document).ready(function(){
 
       var maxLength = response.length;
       for (var i = 0; i < maxLength; i++) {
-        $('#gh_repoNameDes').append("<li>Repository name:<span class='boldText'> " + response[i].name + '</span><br>' + 'Description:  '+ response[i].description + '</li>');
+        var createdAt = moment(response[i].created_at).format("ddd, MMM Do YYYY, h:mm:ss a");
+        $('#gh_repoNameDes').append("<li>Repository name: <span class='boldText'>" + response[i].name + '</span><br><span>Created at: </span>' + createdAt + '<br>' + 'Description: '+ response[i].description + '</li>');
       }
     };
 
