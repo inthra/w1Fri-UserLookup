@@ -1,4 +1,5 @@
 var Lookup = require('./../js/lookup.js').Lookup;
+var emptyBeforeDisplay = require('./../js/clearOutput.js').emptyBeforeDisplay;
 
 $(document).ready(function(){
 
@@ -11,10 +12,9 @@ $(document).ready(function(){
     $('#userInput').val("");
 
     var displayFunction = function(response) {
+      emptyBeforeDisplay();
       $('#gh_username').text(response[0].owner.login);
-      $('#gh_avatar').empty();
       $('#gh_avatar').append("<img id='profileImg' src='" + response[0].owner.avatar_url + "' alt='Profile image' />");
-      $('#gh_repoNameDes').empty();
 
       var maxLength = response.length;
       for (var i = 0; i < maxLength; i++) {
